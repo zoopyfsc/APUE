@@ -1,0 +1,12 @@
+SRC_PATH = ${HOME}/APUE
+
+CXXFLAGS += -Wall -g -O0 -fdiagnostics-color=auto -std=c++11
+CFLAGS += -Wall -g -O0 -fdiagnostics-color=auto
+
+LIB_DIR = ${SRC_PATH}/lib
+INC_DIR = ${SRC_PATH}/include
+
+LIBS += -L${LIB_DIR} \
+        -lerror
+
+INC += -I${INC_DIR}

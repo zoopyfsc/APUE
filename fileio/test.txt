@@ -1,0 +1,2 @@
+The Child Process Writed !
+The Parent Process Wirted !
