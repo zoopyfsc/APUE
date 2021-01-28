@@ -16,10 +16,10 @@ LIB_PATH = $(foreach path, $(LIB_DIRS), $(SRC_PATH)/$(path))
 .PHONY: all lib 
 
 all: lib 
-	$(foreach src, $(CODE_PATH), $(MAKE) -C $(src) && ) true  
+	$(foreach src, $(CODE_PATH), $(MAKE) -C $(src) -f ../BinMakefile && ) true  
 
 lib:
-	$(foreach src, $(LIB_PATH), $(MAKE) -C $(src) && ) true 
+	$(foreach src, $(LIB_PATH), $(MAKE) -C $(src) -f ../LibMakefile && ) true 
 
 clean:
-	$(foreach src, $(CODE_PATH), $(MAKE) -C $(src) clean && ) true
+	$(foreach src, $(CODE_PATH), $(MAKE) -C $(src) -f ../BinMakefile clean && ) true
