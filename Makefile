@@ -5,7 +5,8 @@ CODE_DIRS = intro \
 			standardio \
 			systemfile \
 			fileio \
-			filedir
+			filedir \
+			signal
 
 LIB_DIRS = lib
 
