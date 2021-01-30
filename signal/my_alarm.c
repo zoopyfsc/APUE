@@ -30,4 +30,5 @@ int main()
             printf("return value corrupted!, pw_name = %s\n", ptr->pw_name);
 //        printf("ptr->pw_name:%s\n", ptr->pw_name);
     }
+    exit(0);
 }
