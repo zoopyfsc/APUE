@@ -10,7 +10,8 @@ int main()
 {
     pid_t   pid;
 
-    if (signal(SIGCHLD, SIG_IGN) == SIG_ERR)
+    // 设成成SIG_IGN会不产生僵尸进程
+    if (signal(SIGCHLD, sig_cld) == SIG_ERR)
         perror("signal error");
     
     if ((pid = fork()) < 0)
