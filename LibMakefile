@@ -8,6 +8,7 @@ H_FILES += $(wildcard *.c)
 BIN = liberror.a
 
 OBJ_DIR = ./obj/
+$(shell if [ ! -d $(OBJ_DIR) ]; then mkdir $(OBJ_DIR); fi;)
 OBJ := $(patsubst %.cpp, $(OBJ_DIR)%.o, $(CPP_FILES)) $(patsubst %.c, $(OBJ_DIR)%.o, $(C_FILES))
 
 TARGET = $(BIN_PATH)$(BIN)

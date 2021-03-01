@@ -6,7 +6,8 @@ CODE_DIRS = intro \
 			systemfile \
 			fileio \
 			filedir \
-			signal
+			signal	\
+			thread
 
 LIB_DIRS = lib
 

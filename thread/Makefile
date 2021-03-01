@@ -10,7 +10,6 @@ LIBS += -lpthread
 BIN_PATH = ./
 OBJ_DIR = ./obj/
 $(shell if [ ! -d $(OBJ_DIR) ]; then mkdir $(OBJ_DIR); fi;)
-$(shell if [ ! -d $(OBJ_DIR) ]; then mkdir $(OBJ_DIR); fi;)
 
 OBJS := $(patsubst %.cpp, $(OBJ_DIR)%.o, $(CPP_FILES)) $(patsubst %.c, $(OBJ_DIR)%.o, $(C_FILES))
 
